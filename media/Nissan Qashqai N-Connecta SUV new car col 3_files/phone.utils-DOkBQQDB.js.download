@@ -1,0 +1,6 @@
+
+              const s=e=>e.replace(/\(|\)|\s/g,""),a=e=>/^(07|\+447)\d{9}$/.test(s(e));export{s as d,a as i};
+
+              window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || [];
+              window.__LOADABLE_LOADED_CHUNKS__.push(['phone.utils', { importPath: '/fpa/bundles/phone.utils-DOkBQQDB.js' }]);
+            

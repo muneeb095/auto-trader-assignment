@@ -1,0 +1,6 @@
+
+              import{R as e,_ as a,r}from"./vendor-CaU5PGqL.js";import{I as H}from"./index-B8StP1lb.js";var C=function(t){return e.createElement(H,a({},t),e.createElement(r.Fragment,null,e.createElement("path",{d:"M16 13H8V15H16V13Z"}),e.createElement("path",{d:"M21.79 10.1L20.94 8.41L19.98 4.68C19.82 3.71 18.99 3 18 3H5.98C5 3 4.17 3.7 4.03 4.59L3.06 8.42L2.21 10.11C2.07 10.39 2 10.69 2 11V19C2 20.1 2.9 21 4 21H6.01C7.11 21 8.01 20.1 8.01 19H16.01C16.01 20.1 16.91 21 18.01 21H20.01C21.11 21 22.01 20.1 22.01 19V11C22.01 10.69 21.94 10.38 21.8 10.1H21.79ZM19 13H20V19H18V17H6V19H4V13H5C6.1 13 7 12.1 7 11H4L4.89 9.21L5.98 5L18.03 5.09L19.03 9.01L20 11H17C17 12.1 17.9 13 19 13Z"})))};export{C as I};
+
+              window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || [];
+              window.__LOADABLE_LOADED_CHUNKS__.push(['icon-body-style', { importPath: '/fpa/bundles/icon-body-style-_H94FpHi.js' }]);
+            

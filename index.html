@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Traders</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="header pro-base">
+        <div class="row">
+            <div class="top-bar">
+                <ul>
+                    <li><a href="#">Cars</a></li>
+                    <li><a href="#">Vans</a></li>
+                    <li><a href="#">Bikes</a></li>
+                    <li><a href="#">Motorhomes</a></li>
+                    <li><a href="#">Caravans</a></li>
+                    <li><a href="#">Trucks</a></li>
+                    <li><a href="#">Farm</a></li>
+                    <li><a href="#">Plant</a></li>
+                    <li><a href="#">Electric Bikes</a></li>
+                </ul>
+            </div>
+            <div class="nav-bar">
+                <nav>
+                    <a class="logo" href="#">
+                        <img src="media/auto-trader-logo.png" alt="logo.">
+                    </a>
+                    <ul>
+                        <li><a href="#">User ars</a></li>
+                        <li><a href="#">New cars</a></li>
+                        <li><a href="#">Sell your car</a></li>
+                        <li><a href="#">Value your car</a></li>
+                        <li><a href="#">Car reviews</a></li>
+                        <li><a href="#">Car leasing</a></li>
+                        <li><a href="#">Electric cars</a></li>
+                        <li><a href="#">Buy a car online</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-icons">
+                    <ul>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                    class="atds-svg at__sc-1wblght-0 jnHtwB">
+                                    <title></title>
+                                    <path
+                                        d="M8 14.185C5.115 11.428 1.333 6.968 1.333 4.454C1.333 2.298 2.713 1.333 4.081 1.333C5.1 1.333 6.157 1.83 7.058 2.73L8 3.672L8.942 2.73C9.843 1.83 10.9 1.333 11.919 1.333C13.287 1.333 14.667 2.298 14.667 4.454C14.667 6.964 10.884 11.426 8 14.185ZM11.919 0C10.632 0 9.226 0.561 8 1.787C6.774 0.561 5.369 0 4.081 0C1.866 0 0 1.661 0 4.454C0 8.872 8 16 8 16C8 16 16 8.872 16 4.454C16 1.66 14.134 0 11.919 0Z">
+                                    </path>
+                                </svg>Saved</a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                    class="atds-svg at__sc-1wblght-0 jnHtwB">
+                                    <title></title>
+                                    <path
+                                        d="M6 10.667C3.427 10.667 1.333 8.573 1.333 6C1.333 3.427 3.427 1.333 6 1.333C8.573 1.333 10.667 3.427 10.667 6C10.667 8.573 8.573 10.667 6 10.667ZM10.686 9.742C11.506 8.716 12 7.416 12 6C12 2.687 9.313 0 6 0C2.687 0 0 2.687 0 6C0 9.313 2.687 12 6 12C7.417 12 8.716 11.506 9.742 10.686L15.058 16L16 15.057L10.686 9.742Z">
+                                    </path>
+                                </svg>Sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main pro-base">
+        <div class="hero-section">
+            <div class="row hero-bg-img">
+                <form action="#" method="get">
+                    <h2>Find your perfect car</h2>
+                    <div class="fields-area">
+                        <label for="postCode">Post Code</label>
+                        <input type="text" id="postCode" placeholder="Postcode">
+                        <label for="nationality">Select Your Nationality:</label>
+                        <select id="nationality" name="nationality_selection">
+                            <option value="national"> National</option>
+                            <option value="pakistan">Pakistani</option>
+                            <option value="india">Indian</option>
+                            <option value="usa">American</option>
+                            <option value="uk">British</option>
+                            <option value="china">Chinese</option>
+                        </select>
+                    </div>
+                    <div class="fields-area">
+                        <label for="make">Make</label>
+                        <select name="make" id="make">
+                            <option value="make">Make</option>
+                            <option value="abarth">Abarth(738)</option>
+                            <option value="ac">AC (11)</option>
+                            <option value="ac">AK (5)</option>
+                            <option value="ac">Alfa Romeo (1,170)</option>
+                        </select>
+                        <label for="model">Model</label>
+                        <select name="model" id="model">
+                            <option value="model">Model</option>
+                            <option value="abarth">2001</option>
+                            <option value="ac">Sports (11)</option>
+                            <option value="ac">Kawasaki (5)</option>
+                            <option value="ac">Alfa Romeo (1,170)</option>
+                        </select>
+                    </div>
+                    <div class="fields-area tabs">
+                        <label for="cash">Cash</label>
+                        <Button type="button" id="cash">Cash </button>
+                        <label for="finance">Finance</label>
+                        <Button type="button" id="finance">Finance </button>
+                    </div>
+                    <div class="fields-area">
+                        <label for="minPrice">Min Price</label>
+                        <select name="min price" id="minPrice">
+                            <option value="min price">Min Price</option>
+                            <option value="200$">200$</option>
+                            <option value="400$">400$</option>
+                        </select>
+                        <label for="maxPrice">Max Price</label>
+                        <select name="max price" id="maxPrice">
+                            <option value="max price">Max Price</option>
+                            <option value="600$">200$</option>
+                            <option value="800$">400$</option>
+                        </select>
+                    </div>
+                    <a href="#" class="search-field">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15 10.5C15 12.9853 12.9853 15 10.5 15C8.01472 15 6 12.9853 6 10.5C6 8.01472 8.01472 6 10.5 6C12.9853 6 15 8.01472 15 10.5ZM14.1793 15.2399C13.1632 16.0297 11.8865 16.5 10.5 16.5C7.18629 16.5 4.5 13.8137 4.5 10.5C4.5 7.18629 7.18629 4.5 10.5 4.5C13.8137 4.5 16.5 7.18629 16.5 10.5C16.5 11.8865 16.0297 13.1632 15.2399 14.1792L20.0304 18.9697L18.9697 20.0303L14.1793 15.2399Z"
+                                fill="currentColor" />
+                        </svg><span>Search 738 cars</span>
+                    </a>
+                    <div class="fieds-area btn-area">
+                        <label for="reset filters">Reset Filters</label>
+                        <a href="#" role="button">Reset Filteras</a>
+                        <label for="more options">more options</label>
+                        <a href="#" role="button">More Options</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="brand-new-car">
+            <h2>Lease a brand new car</h2>
+            <div class="row">
+                <article class="offset">
+                    <div class="article">
+                        <div class="article-header">
+                            <div class="featured-image">
+                                <img src="media/new car col 3-4.jpg" alt="ford focus jet black.">
+                            </div>
+                            <small class="pill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.59843 4.48666C7.86525 3.17678 9.03088 2.25 10.3663 2.25H13.6337C14.9691 2.25 16.1347 3.17678 16.4016 4.48666C16.4632 4.78904 16.7371 5.01086 17.022 5.01086H17.0384L17.0548 5.01157C18.4582 5.07294 19.5362 5.24517 20.4362 5.83558C21.0032 6.20757 21.4909 6.68617 21.871 7.24464C22.3439 7.93947 22.5524 8.73694 22.6524 9.70145C22.75 10.6438 22.75 11.825 22.75 13.3211V13.4062C22.75 14.9023 22.75 16.0835 22.6524 17.0258C22.5524 17.9903 22.3439 18.7878 21.871 19.4826C21.4909 20.0411 21.0032 20.5197 20.4362 20.8917C19.7327 21.3532 18.9262 21.5567 17.948 21.6544C16.9903 21.75 15.789 21.75 14.2634 21.75H9.73657C8.21098 21.75 7.00967 21.75 6.05196 21.6544C5.07379 21.5567 4.26731 21.3532 3.56385 20.8917C2.99682 20.5197 2.50905 20.0411 2.12899 19.4826C1.65612 18.7878 1.44756 17.9903 1.34762 17.0258C1.24998 16.0835 1.24999 14.9023 1.25 13.4062V13.3211C1.24999 11.825 1.24998 10.6438 1.34762 9.70145C1.44756 8.73694 1.65612 7.93947 2.12899 7.24464C2.50905 6.68617 2.99682 6.20757 3.56385 5.83558C4.46383 5.24517 5.5418 5.07294 6.94523 5.01157L6.96161 5.01086H6.978C7.26288 5.01086 7.53683 4.78905 7.59843 4.48666ZM10.3663 3.75C9.72522 3.75 9.18905 4.19299 9.06824 4.78607C8.87258 5.74659 8.021 6.50186 6.99633 6.51078C5.64772 6.57069 4.92536 6.73636 4.38664 7.08978C3.98309 7.35452 3.63752 7.6941 3.36906 8.08857C3.09291 8.49435 2.92696 9.01325 2.83963 9.85604C2.75094 10.7121 2.75 11.8156 2.75 13.3636C2.75 14.9117 2.75094 16.0152 2.83963 16.8712C2.92696 17.714 3.09291 18.2329 3.36906 18.6387C3.63752 19.0332 3.98309 19.3728 4.38664 19.6375C4.80417 19.9114 5.33844 20.0756 6.20104 20.1618C7.07549 20.2491 8.20193 20.25 9.77778 20.25H14.2222C15.7981 20.25 16.9245 20.2491 17.799 20.1618C18.6616 20.0756 19.1958 19.9114 19.6134 19.6375C20.0169 19.3728 20.3625 19.0332 20.6309 18.6387C20.9071 18.2329 21.073 17.714 21.1604 16.8712C21.2491 16.0152 21.25 14.9117 21.25 13.3636C21.25 11.8156 21.2491 10.7121 21.1604 9.85604C21.073 9.01325 20.9071 8.49435 20.6309 8.08857C20.3625 7.6941 20.0169 7.35452 19.6134 7.08978C19.0746 6.73636 18.3523 6.57069 17.0037 6.51078C15.979 6.50186 15.1274 5.74659 14.9318 4.78607C14.8109 4.19299 14.2748 3.75 13.6337 3.75H10.3663ZM12 10.75C10.7574 10.75 9.75 11.7574 9.75 13C9.75 14.2426 10.7574 15.25 12 15.25C13.2426 15.25 14.25 14.2426 14.25 13C14.25 11.7574 13.2426 10.75 12 10.75ZM8.25 13C8.25 10.9289 9.92893 9.25 12 9.25C14.0711 9.25 15.75 10.9289 15.75 13C15.75 15.0711 14.0711 16.75 12 16.75C9.92893 16.75 8.25 15.0711 8.25 13ZM17.25 10C17.25 9.58579 17.5858 9.25 18 9.25H19C19.4142 9.25 19.75 9.58579 19.75 10C19.75 10.4142 19.4142 10.75 19 10.75H18C17.5858 10.75 17.25 10.4142 17.25 10Z"
+                                        fill="currentColor" />
+                                </svg><span>6</span>
+                            </small>
+                        </div>
+                        <div class="main-content">
+                            <div class="left-right align-center flex justify-between">
+                                <div class="left">
+                                    <small>From</small>
+                                    <span>£205.75</span>
+                                    <small>Per month (inc. VAT)</small>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li>£2,469 initial payment</li>
+                                        <li>48 month contract</li>
+                                        <li>5,000 miles per year</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="article-date">August 2025 delivery</span>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <h3>Ford Focus</h3>
+                            <span>1.0T EcoBoost MHEV ST-Line Euro 6 (s/s) 5dr</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="offset">
+                    <div class="article">
+                        <div class="article-header">
+                            <div class="featured-image">
+                                <img src="media/new car col 3-3.jpg" alt="Hundai i10.">
+                            </div>
+                            <small class="pill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.59843 4.48666C7.86525 3.17678 9.03088 2.25 10.3663 2.25H13.6337C14.9691 2.25 16.1347 3.17678 16.4016 4.48666C16.4632 4.78904 16.7371 5.01086 17.022 5.01086H17.0384L17.0548 5.01157C18.4582 5.07294 19.5362 5.24517 20.4362 5.83558C21.0032 6.20757 21.4909 6.68617 21.871 7.24464C22.3439 7.93947 22.5524 8.73694 22.6524 9.70145C22.75 10.6438 22.75 11.825 22.75 13.3211V13.4062C22.75 14.9023 22.75 16.0835 22.6524 17.0258C22.5524 17.9903 22.3439 18.7878 21.871 19.4826C21.4909 20.0411 21.0032 20.5197 20.4362 20.8917C19.7327 21.3532 18.9262 21.5567 17.948 21.6544C16.9903 21.75 15.789 21.75 14.2634 21.75H9.73657C8.21098 21.75 7.00967 21.75 6.05196 21.6544C5.07379 21.5567 4.26731 21.3532 3.56385 20.8917C2.99682 20.5197 2.50905 20.0411 2.12899 19.4826C1.65612 18.7878 1.44756 17.9903 1.34762 17.0258C1.24998 16.0835 1.24999 14.9023 1.25 13.4062V13.3211C1.24999 11.825 1.24998 10.6438 1.34762 9.70145C1.44756 8.73694 1.65612 7.93947 2.12899 7.24464C2.50905 6.68617 2.99682 6.20757 3.56385 5.83558C4.46383 5.24517 5.5418 5.07294 6.94523 5.01157L6.96161 5.01086H6.978C7.26288 5.01086 7.53683 4.78905 7.59843 4.48666ZM10.3663 3.75C9.72522 3.75 9.18905 4.19299 9.06824 4.78607C8.87258 5.74659 8.021 6.50186 6.99633 6.51078C5.64772 6.57069 4.92536 6.73636 4.38664 7.08978C3.98309 7.35452 3.63752 7.6941 3.36906 8.08857C3.09291 8.49435 2.92696 9.01325 2.83963 9.85604C2.75094 10.7121 2.75 11.8156 2.75 13.3636C2.75 14.9117 2.75094 16.0152 2.83963 16.8712C2.92696 17.714 3.09291 18.2329 3.36906 18.6387C3.63752 19.0332 3.98309 19.3728 4.38664 19.6375C4.80417 19.9114 5.33844 20.0756 6.20104 20.1618C7.07549 20.2491 8.20193 20.25 9.77778 20.25H14.2222C15.7981 20.25 16.9245 20.2491 17.799 20.1618C18.6616 20.0756 19.1958 19.9114 19.6134 19.6375C20.0169 19.3728 20.3625 19.0332 20.6309 18.6387C20.9071 18.2329 21.073 17.714 21.1604 16.8712C21.2491 16.0152 21.25 14.9117 21.25 13.3636C21.25 11.8156 21.2491 10.7121 21.1604 9.85604C21.073 9.01325 20.9071 8.49435 20.6309 8.08857C20.3625 7.6941 20.0169 7.35452 19.6134 7.08978C19.0746 6.73636 18.3523 6.57069 17.0037 6.51078C15.979 6.50186 15.1274 5.74659 14.9318 4.78607C14.8109 4.19299 14.2748 3.75 13.6337 3.75H10.3663ZM12 10.75C10.7574 10.75 9.75 11.7574 9.75 13C9.75 14.2426 10.7574 15.25 12 15.25C13.2426 15.25 14.25 14.2426 14.25 13C14.25 11.7574 13.2426 10.75 12 10.75ZM8.25 13C8.25 10.9289 9.92893 9.25 12 9.25C14.0711 9.25 15.75 10.9289 15.75 13C15.75 15.0711 14.0711 16.75 12 16.75C9.92893 16.75 8.25 15.0711 8.25 13ZM17.25 10C17.25 9.58579 17.5858 9.25 18 9.25H19C19.4142 9.25 19.75 9.58579 19.75 10C19.75 10.4142 19.4142 10.75 19 10.75H18C17.5858 10.75 17.25 10.4142 17.25 10Z"
+                                        fill="currentColor" />
+                                </svg><span>6</span>
+                            </small>
+                        </div>
+                        <div class="main-content">
+                            <div class="left-right flex justify-between align-center">
+                                <div class="left">
+                                    <small>From</small>
+                                    <span>£157.29</span>
+                                    <small>Per month (inc. VAT)</small>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li>£1,887 initial payment</li>
+                                        <li>48 month contract</li>
+                                        <li>5,000 miles per year</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="article-date">14-21 days delivery</span>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <h3>Hundai i10</h3>
+                            <span>1.0 Advance Euro 6 (s/s) 5dr</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="offset">
+                    <div class="article">
+                        <div class="article-header">
+                            <div class="featured-image">
+                                <img src="media/new car col 3-2.jpg" alt="Nissan Juke.">
+                            </div>
+                            <small class="pill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.59843 4.48666C7.86525 3.17678 9.03088 2.25 10.3663 2.25H13.6337C14.9691 2.25 16.1347 3.17678 16.4016 4.48666C16.4632 4.78904 16.7371 5.01086 17.022 5.01086H17.0384L17.0548 5.01157C18.4582 5.07294 19.5362 5.24517 20.4362 5.83558C21.0032 6.20757 21.4909 6.68617 21.871 7.24464C22.3439 7.93947 22.5524 8.73694 22.6524 9.70145C22.75 10.6438 22.75 11.825 22.75 13.3211V13.4062C22.75 14.9023 22.75 16.0835 22.6524 17.0258C22.5524 17.9903 22.3439 18.7878 21.871 19.4826C21.4909 20.0411 21.0032 20.5197 20.4362 20.8917C19.7327 21.3532 18.9262 21.5567 17.948 21.6544C16.9903 21.75 15.789 21.75 14.2634 21.75H9.73657C8.21098 21.75 7.00967 21.75 6.05196 21.6544C5.07379 21.5567 4.26731 21.3532 3.56385 20.8917C2.99682 20.5197 2.50905 20.0411 2.12899 19.4826C1.65612 18.7878 1.44756 17.9903 1.34762 17.0258C1.24998 16.0835 1.24999 14.9023 1.25 13.4062V13.3211C1.24999 11.825 1.24998 10.6438 1.34762 9.70145C1.44756 8.73694 1.65612 7.93947 2.12899 7.24464C2.50905 6.68617 2.99682 6.20757 3.56385 5.83558C4.46383 5.24517 5.5418 5.07294 6.94523 5.01157L6.96161 5.01086H6.978C7.26288 5.01086 7.53683 4.78905 7.59843 4.48666ZM10.3663 3.75C9.72522 3.75 9.18905 4.19299 9.06824 4.78607C8.87258 5.74659 8.021 6.50186 6.99633 6.51078C5.64772 6.57069 4.92536 6.73636 4.38664 7.08978C3.98309 7.35452 3.63752 7.6941 3.36906 8.08857C3.09291 8.49435 2.92696 9.01325 2.83963 9.85604C2.75094 10.7121 2.75 11.8156 2.75 13.3636C2.75 14.9117 2.75094 16.0152 2.83963 16.8712C2.92696 17.714 3.09291 18.2329 3.36906 18.6387C3.63752 19.0332 3.98309 19.3728 4.38664 19.6375C4.80417 19.9114 5.33844 20.0756 6.20104 20.1618C7.07549 20.2491 8.20193 20.25 9.77778 20.25H14.2222C15.7981 20.25 16.9245 20.2491 17.799 20.1618C18.6616 20.0756 19.1958 19.9114 19.6134 19.6375C20.0169 19.3728 20.3625 19.0332 20.6309 18.6387C20.9071 18.2329 21.073 17.714 21.1604 16.8712C21.2491 16.0152 21.25 14.9117 21.25 13.3636C21.25 11.8156 21.2491 10.7121 21.1604 9.85604C21.073 9.01325 20.9071 8.49435 20.6309 8.08857C20.3625 7.6941 20.0169 7.35452 19.6134 7.08978C19.0746 6.73636 18.3523 6.57069 17.0037 6.51078C15.979 6.50186 15.1274 5.74659 14.9318 4.78607C14.8109 4.19299 14.2748 3.75 13.6337 3.75H10.3663ZM12 10.75C10.7574 10.75 9.75 11.7574 9.75 13C9.75 14.2426 10.7574 15.25 12 15.25C13.2426 15.25 14.25 14.2426 14.25 13C14.25 11.7574 13.2426 10.75 12 10.75ZM8.25 13C8.25 10.9289 9.92893 9.25 12 9.25C14.0711 9.25 15.75 10.9289 15.75 13C15.75 15.0711 14.0711 16.75 12 16.75C9.92893 16.75 8.25 15.0711 8.25 13ZM17.25 10C17.25 9.58579 17.5858 9.25 18 9.25H19C19.4142 9.25 19.75 9.58579 19.75 10C19.75 10.4142 19.4142 10.75 19 10.75H18C17.5858 10.75 17.25 10.4142 17.25 10Z"
+                                        fill="currentColor" />
+                                </svg><span>6</span>
+                            </small>
+                        </div>
+                        <div class="main-content">
+                            <div class="left-right flex justify-between align-center">
+                                <div class="left">
+                                    <small>From</small>
+                                    <span>£195.63</span>
+                                    <small>Per month (inc. VAT)</small>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li>£2,347 initial payment</li>
+                                        <li>48 month contract</li>
+                                        <li>5,000 miles per year</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="article-date">August 2025</span>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <h3>Nissan Juke</h3>
+                            <span>1.0 DIG-T N-Connecta Euro 6 (s/s) 5dr</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="offset">
+                    <div class="article">
+                        <div class="article-header">
+                            <div class="featured-image">
+                                <img src="media/new car col 3-1.jpg" alt="Jeep avaenger.">
+                            </div>
+                            <small class="pill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.59843 4.48666C7.86525 3.17678 9.03088 2.25 10.3663 2.25H13.6337C14.9691 2.25 16.1347 3.17678 16.4016 4.48666C16.4632 4.78904 16.7371 5.01086 17.022 5.01086H17.0384L17.0548 5.01157C18.4582 5.07294 19.5362 5.24517 20.4362 5.83558C21.0032 6.20757 21.4909 6.68617 21.871 7.24464C22.3439 7.93947 22.5524 8.73694 22.6524 9.70145C22.75 10.6438 22.75 11.825 22.75 13.3211V13.4062C22.75 14.9023 22.75 16.0835 22.6524 17.0258C22.5524 17.9903 22.3439 18.7878 21.871 19.4826C21.4909 20.0411 21.0032 20.5197 20.4362 20.8917C19.7327 21.3532 18.9262 21.5567 17.948 21.6544C16.9903 21.75 15.789 21.75 14.2634 21.75H9.73657C8.21098 21.75 7.00967 21.75 6.05196 21.6544C5.07379 21.5567 4.26731 21.3532 3.56385 20.8917C2.99682 20.5197 2.50905 20.0411 2.12899 19.4826C1.65612 18.7878 1.44756 17.9903 1.34762 17.0258C1.24998 16.0835 1.24999 14.9023 1.25 13.4062V13.3211C1.24999 11.825 1.24998 10.6438 1.34762 9.70145C1.44756 8.73694 1.65612 7.93947 2.12899 7.24464C2.50905 6.68617 2.99682 6.20757 3.56385 5.83558C4.46383 5.24517 5.5418 5.07294 6.94523 5.01157L6.96161 5.01086H6.978C7.26288 5.01086 7.53683 4.78905 7.59843 4.48666ZM10.3663 3.75C9.72522 3.75 9.18905 4.19299 9.06824 4.78607C8.87258 5.74659 8.021 6.50186 6.99633 6.51078C5.64772 6.57069 4.92536 6.73636 4.38664 7.08978C3.98309 7.35452 3.63752 7.6941 3.36906 8.08857C3.09291 8.49435 2.92696 9.01325 2.83963 9.85604C2.75094 10.7121 2.75 11.8156 2.75 13.3636C2.75 14.9117 2.75094 16.0152 2.83963 16.8712C2.92696 17.714 3.09291 18.2329 3.36906 18.6387C3.63752 19.0332 3.98309 19.3728 4.38664 19.6375C4.80417 19.9114 5.33844 20.0756 6.20104 20.1618C7.07549 20.2491 8.20193 20.25 9.77778 20.25H14.2222C15.7981 20.25 16.9245 20.2491 17.799 20.1618C18.6616 20.0756 19.1958 19.9114 19.6134 19.6375C20.0169 19.3728 20.3625 19.0332 20.6309 18.6387C20.9071 18.2329 21.073 17.714 21.1604 16.8712C21.2491 16.0152 21.25 14.9117 21.25 13.3636C21.25 11.8156 21.2491 10.7121 21.1604 9.85604C21.073 9.01325 20.9071 8.49435 20.6309 8.08857C20.3625 7.6941 20.0169 7.35452 19.6134 7.08978C19.0746 6.73636 18.3523 6.57069 17.0037 6.51078C15.979 6.50186 15.1274 5.74659 14.9318 4.78607C14.8109 4.19299 14.2748 3.75 13.6337 3.75H10.3663ZM12 10.75C10.7574 10.75 9.75 11.7574 9.75 13C9.75 14.2426 10.7574 15.25 12 15.25C13.2426 15.25 14.25 14.2426 14.25 13C14.25 11.7574 13.2426 10.75 12 10.75ZM8.25 13C8.25 10.9289 9.92893 9.25 12 9.25C14.0711 9.25 15.75 10.9289 15.75 13C15.75 15.0711 14.0711 16.75 12 16.75C9.92893 16.75 8.25 15.0711 8.25 13ZM17.25 10C17.25 9.58579 17.5858 9.25 18 9.25H19C19.4142 9.25 19.75 9.58579 19.75 10C19.75 10.4142 19.4142 10.75 19 10.75H18C17.5858 10.75 17.25 10.4142 17.25 10Z"
+                                        fill="currentColor" />
+                                </svg><span>6</span>
+                            </small>
+                        </div>
+                        <div class="main-content">
+                            <div class="left-right flex align-center justify-between">
+                                <div class="left">
+                                    <small>From</small>
+                                    <span>£209.67</span>
+                                    <small>Per month (inc. VAT)</small>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li>£2,516 initial payment</li>
+                                        <li>24 month contract</li>
+                                        <li>5,000 miles per year</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="article-date">Autgust 2025 delivery</span>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <h3>Jeep Avenger</h3>
+                            <span>1.2 Altitude Euro 6 (s/s) 5dr</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="view-more-btn">
+                <a href="#" role="button" class="view-more">
+                    <span>view more details</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        fill="currentColor" height="1em" width="1em" version="1.1" id="Layer_1"
+                        viewBox="0 0 492.004 492.004" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path
+                                    d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136    c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002    v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864    c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872    l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z" />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="reserve-with-autotrader pro-base">
+            <div class="row">
+                <div class="col-4 first">
+                    <div>
+                        <span class="reserve-first-span">Reserve with Autotrader</span>
+                    </div>
+                    <h2>Reserve Online with Autotrader</h2>
+                    <p>Once you’ve found your car, build your deal to reserve online.</p>
+                    <a href="#" class="search-anchor"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em"
+                            height="1.5em" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15 10.5C15 12.9853 12.9853 15 10.5 15C8.01472 15 6 12.9853 6 10.5C6 8.01472 8.01472 6 10.5 6C12.9853 6 15 8.01472 15 10.5ZM14.1793 15.2399C13.1632 16.0297 11.8865 16.5 10.5 16.5C7.18629 16.5 4.5 13.8137 4.5 10.5C4.5 7.18629 7.18629 4.5 10.5 4.5C13.8137 4.5 16.5 7.18629 16.5 10.5C16.5 11.8865 16.0297 13.1632 15.2399 14.1792L20.0304 18.9697L18.9697 20.0303L14.1793 15.2399Z"
+                                fill="currentColor" />
+                        </svg><span>Search 83,364 cars</span></a>
+                </div>
+                <div class="col-4 second">
+                    <article>
+                        <div class="featured-image">
+                            <img src="media/deserve with autotraders microsoft.png" alt="microsoft documents.">
+                        </div>
+                        <div class="content-area">
+                            <h3>Build your deal step by step</h3>
+                            <p>Add part exchange, finance and choose delivery or collection. Well guide you through it
+                                all!Then complete the sell with the seller.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-4 third">
+                    <article>
+                        <div class="featured-image">
+                            <img src="media/Reserve-online-car.jpg" alt="reserve online car">
+                        </div>
+                        <div class="content-area">
+                            <h3>Peace of mind with a free history vehicle check</h3>
+                            <p>Order with confidence with our free vehicle history check to avoid costly surprises if
+                                you decide to buy</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="car-worth">
+            <div class="row">
+                <div class="col-6 car-worth-img">
+                    <img src="media/summer.webp" alt="summer-img.">
+                </div>
+                <div class="col-6 car-worth-content">
+                    <h2>We know what your car is really worth</h2>
+                    <p>Join the millions who value their car with Autotrader. It's completely free and within seconds we
+                        will give you a live valuation of what your car is worth.</p>
+                    <a href="#">Value your car</a>
+                </div>
+            </div>
+        </div>
+        <div class="buying-essentials">
+            <div class="row">
+                <h2>Buying essentials</h2>
+                <div class="columns">
+                    <a href="#" class="col-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M60 18a6.996 6.996 0 016.883 5.765l.037.235H74v3h10c1.05 0 1.918.82 1.995 1.851L86 29v35h-2V29H74v5H46v-5H36v62h48V72h2v19c0 1.05-.82 1.918-1.851 1.995L84 93H36c-1.05 0-1.918-.82-1.995-1.851L34 91V29c0-1.05.82-1.918 1.851-1.994L36 27h10v-3h7.08c.48-3.39 3.4-6 6.92-6zM49 67c1.05 0 1.918.82 1.995 1.851L51 69v6c0 1.05-.82 1.918-1.851 1.995L49 77h-6c-1.05 0-1.918-.82-1.995-1.851L41 75v-6c0-1.05.82-1.918 1.851-1.995L43 67h6zm0 2h-6v6h6v-6zm0-17c1.05 0 1.918.82 1.995 1.851L51 54v6c0 1.05-.82 1.918-1.851 1.995L49 62h-6c-1.05 0-1.918-.82-1.995-1.851L41 60v-6c0-1.05.82-1.918 1.851-1.995L43 52h6zm0 2h-6v6h6v-6zm11-34a5.002 5.002 0 00-4.995 4.783L55 25v1h-7v6h24v-6h-7v-1c0-2.76-2.24-5-5-5z"
+                                fill="#242D3D" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M69 81.393l21.879-21.88 2.587 2.588L71.587 83.98H69v-2.587zm25.414-25.414l2.587 2.587-2.121 2.12-2.587-2.586 2.121-2.121zm4.001 4c.78-.778.78-2.048 0-2.827l-2.587-2.587a2.001 2.001 0 00-2.828 0L67.296 80.269h.001a.996.996 0 00-.297.71v5h5a.996.996 0 00.71-.296h.001L98.415 59.98z"
+                                fill="#4871D9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M41 86h24v-4H41v4z" fill="#fff" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M41 86h24v-4H41v4z" fill="#4871D9"
+                                fill-opacity=".5" />
+                        </svg>
+                        <h4>Check a car's history</h4>
+                        <p>Have complete peace of mind before you buy your next car</p>
+                    </a>
+                    <a href="#" class="col-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M63.153 69H42.846l-.666-4h21.64l-.667 4zM65 63H41a1 1 0 00-1 1c0 .057.023.106.032.161l-.019.003 1 6 .02-.003c.08.473.472.839.967.839h22a.986.986 0 00.967-.839l.02.003 1-6-.02-.003c.01-.055.033-.104.033-.161a1 1 0 00-1-1zm14-12v-2c1.103 0 2 .897 2 2h-2zm-52-2v2h-2c0-1.103.897-2 2-2zm52-2c-1.103 0-2 .897-2 2v2h-1.082l-3.97-10.316C71.898 40.533 70.679 37 67 37H39c-3.679 0-4.898 3.533-4.934 3.641L30.082 51H29v-2c0-1.103-.897-2-2-2-2.206 0-4 1.794-4 4 0 1.103.897 2 2 2h4.312l-.197.514L26.2 57.4l.014.01A.976.976 0 0026 58v23c0 1.103.897 2 2 2h8c1.103 0 2-.897 2-2v-4h30v4c0 1.103.897 2 2 2h5v-2h-5v-6H36v6h-8V60.105l7.75.775-.72 2.878 1.94.484 1-4-.018-.004c.02-.079.048-.154.048-.238a.99.99 0 00-.902-.98l.002-.015-8.934-.894L30.8 54.6l-.014-.01a.976.976 0 00.142-.233l.006.002 5.013-13.038C35.979 41.227 36.776 39 39 39h28c2.224 0 3.021 2.227 3.066 2.359l5 13 .006-.002c.033.086.087.16.142.233l-.014.01 2.634 3.511-8.934.894.002.015A.99.99 0 0068 60c0 .084.028.159.049.237l-.019.005 1 4 1.94-.484-.72-2.878 7.75-.775V64h2v-6a.976.976 0 00-.214-.59l.014-.01-2.915-3.886-.198-.514H81c1.103 0 2-.897 2-2 0-2.206-1.794-4-4-4z"
+                                fill="#242D3D" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M74 67.734v7.275c.002.454.184 11.114 12 15.846 11.816-4.732 11.998-15.392 12-15.848v-7.273L86 63.14l-12 4.594zM86 93l-.357-.137c-7.034-2.692-10.37-7.386-11.93-10.849C72.02 78.254 72 75.14 72 75.01v-8.65L86 61l14 5.36v8.65c0 .125-.156 12.691-13.643 17.853L86 93z"
+                                fill="#4871D9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M70.067 41.36C70.02 41.225 69.224 39 67 39H39c-2.224 0-3.021 2.226-3.053 2.321l-4.492 11.68c6.363-8.023 19.125-11.972 38.61-11.642zM86 65.281v23.403c-9.845-4.368-9.998-13.297-10-13.675v-5.9l10-3.828z"
+                                fill="#fff" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M70.067 41.36C70.02 41.225 69.224 39 67 39H39c-2.224 0-3.021 2.226-3.053 2.321l-4.492 11.68c6.363-8.023 19.125-11.972 38.61-11.642zM86 65.281v23.403c-9.845-4.368-9.998-13.297-10-13.675v-5.9l10-3.828z"
+                                fill="#4871D9" fill-opacity=".5" />
+                        </svg>
+                        <h4>Security advise</h4>
+                        <p>Advise on how to buy and sell vehicle safely</p>
+                    </a>
+                    <a href="#" class="col-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M66 27c1.05 0 1.918.82 1.994 1.852L68 29v32h1.3L64 67h27c.593.02 1.067.213 1.42.58s.523.67.51.91c.026.107.049.218.06.334L93 69v22c0 1.05-.82 1.918-1.852 1.995L91 93H56c-1.05 0-1.918-.82-1.995-1.851L54 91v-6H29c-1.05 0-1.918-.82-1.995-1.851L27 83V29c0-1.05.82-1.918 1.851-1.994L29 27h37zM56 68.45V91h35V69H58a3.959 3.959 0 01-1.8-.441l-.2-.109zM66 29H29v54h25V65a3.999 3.999 0 013.8-3.995L58 61h8V29zm19 48a3 3 0 110 6 3 3 0 010-6zm0 2a1 1 0 100 2 1 1 0 000-2zm-46-8c1.053 0 1.918.817 1.995 1.85L41 73v3a2.002 2.002 0 01-1.85 1.995L39 78h-3a2.002 2.002 0 01-1.995-1.85L34 76v-3c0-1.053.817-1.918 1.85-1.995L36 71h3zm10 0c1.053 0 1.918.817 1.995 1.85L51 73v3a2.002 2.002 0 01-1.85 1.995L49 78h-3a2.002 2.002 0 01-1.995-1.85L44 76v-3c0-1.053.817-1.918 1.85-1.995L46 71h3zm-10 2h-3v3h3v-3zm10 0h-3v3h3v-3zM39 61c1.053 0 1.918.817 1.995 1.85L41 63v3a2.002 2.002 0 01-1.85 1.995L39 68h-3a2.002 2.002 0 01-1.995-1.85L34 66v-3c0-1.053.817-1.918 1.85-1.995L36 61h3zm10 0c1.053 0 1.918.817 1.995 1.85L51 63v3a2.002 2.002 0 01-1.85 1.995L49 68h-3a2.002 2.002 0 01-1.995-1.85L44 66v-3c0-1.053.817-1.918 1.85-1.995L46 61h3zm18.3 2H58c-.55 0-1.05.22-1.41.59-.37.36-.59.86-.59 1.41 0 1.05.82 1.918 1.851 1.995L58 67h5.3l4-4zM39 63h-3v3h3v-3zm10 0h-3v3h3v-3zM39 51c1.053 0 1.918.817 1.995 1.85L41 53v3a2.002 2.002 0 01-1.85 1.995L39 58h-3a2.002 2.002 0 01-1.995-1.85L34 56v-3c0-1.053.817-1.918 1.85-1.995L36 51h3zm20 0c1.053 0 1.918.817 1.995 1.85L61 53v3a2.002 2.002 0 01-1.85 1.995L59 58h-3a2.002 2.002 0 01-1.995-1.85L54 56v-3c0-1.053.817-1.918 1.85-1.995L56 51h3zm-10 0c1.053 0 1.918.817 1.995 1.85L51 53v3a2.002 2.002 0 01-1.85 1.995L49 58h-3a2.002 2.002 0 01-1.995-1.85L44 56v-3c0-1.053.817-1.918 1.85-1.995L46 51h3zm-10 2h-3v3h3v-3zm20 0h-3v3h3v-3zm-10 0h-3v3h3v-3zm10-19c1.053 0 1.918.817 1.995 1.85L61 36v8a2.002 2.002 0 01-1.85 1.995L59 46H36a2.002 2.002 0 01-1.995-1.85L34 44v-8c0-1.053.817-1.918 1.85-1.995L36 34h23zm0 2H36v8h23v-8z"
+                                fill="#242D3D" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M91.51 67.07c-.16-.04-.33-.07-.51-.07H74.62l11.81-11.82 8.49 8.49-3.41 3.4zm-9.32-16.13l2.83 2.83L71.79 67h-5.66l16.06-16.06zm1.42-1.42a2.006 2.006 0 00-2.83 0L69.3 61l-6 6H91c1.1 0 2 .9 2 2 0 .072 0 0 0 0 0-.2-.03-.35-.07-.51l3.4-3.41a2.002 2.002 0 000-2.83L83.61 49.52z"
+                                fill="#4871D9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M59 36v8H36c12.333 0 20-2.667 23-8z"
+                                fill="#fff" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M59 36v8H36c12.333 0 20-2.667 23-8z"
+                                fill="#4871D9" fill-opacity=".5" />
+                        </svg>
+                        <h4>Car finance and loans</h4>
+                        <p>Discover how much you can borrow and find the right package for you.</p>
+                    </a>
+                    <a href="#" class="col-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M63.153 69H42.846l-.666-4h21.64l-.667 4zM65 63H41a1 1 0 00-1 1c0 .057.023.106.032.161l-.019.003 1 6 .02-.003c.08.473.472.839.967.839h22a.986.986 0 00.967-.839l.02.003 1-6-.02-.003c.01-.055.033-.104.033-.161a1 1 0 00-1-1zm14-12v-2c1.103 0 2 .897 2 2h-2zm-52-2v2h-2c0-1.103.897-2 2-2zm52-2c-1.103 0-2 .897-2 2v2h-1.082l-3.97-10.316C71.898 40.533 70.679 37 67 37H39c-3.679 0-4.898 3.533-4.934 3.641L30.082 51H29v-2c0-1.103-.897-2-2-2-2.206 0-4 1.794-4 4 0 1.103.897 2 2 2h4.312l-.197.514L26.2 57.4l.014.01A.976.976 0 0026 58v23c0 1.103.897 2 2 2h8c1.103 0 2-.897 2-2v-4h30v4c0 1.103.897 2 2 2h8c1.103 0 2-.897 2-2v-1h-2v1h-8v-6H36v6h-8V60.105l7.75.775-.72 2.878 1.94.484 1-4-.018-.004c.02-.079.048-.154.048-.238a.99.99 0 00-.902-.98l.002-.015-8.934-.894L30.8 54.6l-.014-.01a.976.976 0 00.142-.233l.006.002 5.013-13.038C35.979 41.227 36.776 39 39 39h28c2.224 0 3.021 2.227 3.066 2.359l5 13 .006-.002c.033.086.087.16.142.233l-.014.01 2.8 3.733V60h2v-2a.976.976 0 00-.214-.59l.014-.01-2.915-3.886-.198-.514H81c1.103 0 2-.897 2-2 0-2.206-1.794-4-4-4z"
+                                fill="#242D3D" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M78 63a4 4 0 100 8 4 4 0 000-8zm0 2c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2zm11.41 24L72 71.59V61h10.59L100 78.41 89.41 89zm12-12l-17.7-17.71A.997.997 0 0083 59H72c-1.1 0-2 .9-2 2v11c0 .28.11.53.29.71L88 90.41a1.991 1.991 0 002.83 0l10.58-10.58a1.993 1.993 0 000-2.83z"
+                                fill="#4871D9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M67 39c2.223 0 3.02 2.226 3.066 2.36-19.485-.33-32.247 3.618-38.61 11.64l4.491-11.679c.032-.095.83-2.32 3.053-2.32h28zm18.025 40.113l.077.188.004.011c.143.394.287.79.675 1.176.873.874 1.755.585 2.365.026l.102-.103-.695-.695c-.331.365-.704.449-1.07.085-.22-.221-.355-.492-.466-.738a52.76 52.76 0 01-.054-.127 9.383 9.383 0 00-.26-.577 4.64 4.64 0 00.755-.636c.229-.23.399-.483.543-.763l1.273 1.273.653-.654-1.553-1.552c.136-.56.297-1.094.67-1.467.518-.518 1.23-.67 1.84-.06.646.645.527 1.255-.067 1.849l-.042.043.746.746.084-.084c.942-.942.95-2.206-.042-3.198-1.06-1.06-2.34-1.07-3.273-.135l-.11.11c-.331.33-.56.866-.696 1.306l-.5-.501-.653.653.847.848c-.118.34-.278.67-.533.925a6.072 6.072 0 01-.51.44l-.058-.058c-.781-.73-1.561-.612-2.155.05l.73.73c.279-.28.559-.255.898.085.254.253.356.507.475.804z"
+                                fill="#fff" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M67 39c2.223 0 3.02 2.226 3.066 2.36-19.485-.33-32.247 3.618-38.61 11.64l4.491-11.679c.032-.095.83-2.32 3.053-2.32h28zm18.025 40.113l.077.188.004.011c.143.394.287.79.675 1.176.873.874 1.755.585 2.365.026l.102-.103-.695-.695c-.331.365-.704.449-1.07.085-.22-.221-.355-.492-.466-.738a52.76 52.76 0 01-.054-.127 9.383 9.383 0 00-.26-.577 4.64 4.64 0 00.755-.636c.229-.23.399-.483.543-.763l1.273 1.273.653-.654-1.553-1.552c.136-.56.297-1.094.67-1.467.518-.518 1.23-.67 1.84-.06.646.645.527 1.255-.067 1.849l-.042.043.746.746.084-.084c.942-.942.95-2.206-.042-3.198-1.06-1.06-2.34-1.07-3.273-.135l-.11.11c-.331.33-.56.866-.696 1.306l-.5-.501-.653.653.847.848c-.118.34-.278.67-.533.925a6.072 6.072 0 01-.51.44l-.058-.058c-.781-.73-1.561-.612-2.155.05l.73.73c.279-.28.559-.255.898.085.254.253.356.507.475.804z"
+                                fill="#4871D9" fill-opacity=".5" />
+                        </svg>
+                        <h4>What's it worth</h4>
+                        <p>Get a free valuation. Sell or part-exchange your car at the right price.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="latest">
+            <div class="row">
+                <h2>The latest from Autotrader</h2>
+                <div class="columns">
+                    <a class="col-3 first offset box-shadow">
+                        <div class="latest-col-img">
+                            <img src="media/Autotrader-UK-New-and-Used-Cars-For-Sale Latest.png" alt="">
+                        </div>
+                        <div class="latest-col-content">
+                            <h3>Living with a BMW i5 Touring (Month 5)</h3>
+                            <p>We find out whether this big electric estate can copy with everything life throws at it.
+                            </p>
+                            <span>LONGTERMREVIEW | Today</span>
+                        </div>
+                    </a>
+                    <a class="col-3 second offset box-shadow">
+                        <div class="latest-col-img">
+                            <img src="media/Autotrader-UK-New-and-Used-Cars-For-Sale latest 2.png" alt="">
+                        </div>
+                        <div class="latest-col-content">
+                            <h3>Mazda 6e (2025 - ) review</h3>
+                            <p>The all-electric Mazda6e looks great and has plenty of tech, but is it really a Mazda?
+                            </p>
+                            <span> EXPERTREVIEW | Today</span>
+                        </div>
+                    </a>
+                    <a class="col-3 third offset box-shadow">
+                        <div class="latest-col-img">
+                            <img src="media/Autotrader-UK-New-and-Used-Cars-For-Sale latest 3.png" alt="">
+                        </div>
+                        <div class="latest-col-content">
+                            <h3>Skoda Elroq vRS (2025 — ) review</h3>
+                            <p>We like the standard Elroq for all but its boring looks - enter the faster, ftJnkier and
+                                considerably more expensive VRS version!</p>
+                            <span>EXPERTREVIEW | Today</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns">
+                    <a class="col-3 first offset box-shadow">
+                        <div class="latest-col-img">
+                            <img src="media/Autotrader-UK-New-and-Used-Cars-For-Sale latest 4.png" alt="">
+                        </div>
+                        <div class="latest-col-content">
+                            <h3>Chery Tiggo 8 Super Hybrid - silly name, serious car!</h3>
+                            <p>Another Chinese brand enters the mix, the Chery Tiggo 8 Super Hybrid offering seating for
+                                seven, incredible range and great value</p>
+                            <span>NEWS | 5 days ago</span>
+                        </div>
+                    </a>
+                    <a class="col-3 second offset box-shadow">
+                        <div class="latest-col-img">
+                            <img src="media/Autotrader-UK-New-and-Used-Cars-For-Sale latest 5.png" alt="">
+                        </div>
+                        <div class="latest-col-content">
+                            <h3>Bentley's electric EXP 15 Concept is out to steal Jaguar's thunder</h3>
+                            <p>The bold, brutish and bejewelled concept car shows us what the first electric Bentley
+                                could be like</p>
+                            <span> NEWS | 6 days ago</span>
+                        </div>
+                    </a>
+                    <a class="col-3 third offset box-shadow">
+                        <div class="latest-col-img">
+                            <img src="media/Autotrader-UK-New-and-Used-Cars-For-Sale latest 6.png" alt="">
+                        </div>
+                        <div class="latest-col-content">
+                            <h3>Highly Rated Awards 2025 winners announced</h3>
+                            <p>Autotrader's Highly Rated Retailers for 2025 have been announced - here's how they help
+                                you find a car retailer you can trust.</p>
+                            <span> NEWS | 6 days ago</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="your-brand">
+            <div class="row">
+                <h2>Browse Your Brand</h2>
+                <div class="columns">
+                    <a href="#" class="col-3">
+                        <img src="media/audi-logo.jpg" alt="audi-logo.">
+                        <h4>AUDI</h4>
+                    </a>
+                    <a href="#" class="col-3">
+                        <img src="media/bmw logo.jpg" alt="bmw-logo.">
+                        <h4>BMW</h4>
+                    </a>
+                    <a href="#" class="col-3">
+                        <img src="media/mercedez logo.jpg" alt="mercedez-logo.">
+                        <h4>MERCEDEZ BENZ</h4>
+                    </a>
+                    <a href="#" class="col-3">
+                        <img src="media/volvo logo.jpg" alt="volvo-logo.">
+                        <h4>VOLVO</h4>
+                    </a>
+                </div>
+                <a href="#" class="your-brand-a-child">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M6 12H18M12 6V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <span>Show all brand</span>
+                </a>
+            </div>
+        </div>
+        <div class="follow">
+            <div class="row">
+                <div class="follow-row">
+                    <h2>Follow us on social media</h2>
+                    <p>All the latest news for you</p>
+                    <div class="social-icons">
+                        <a href="#" class="icon facebook">
+                            <svg height="1.4em" width="1.4em" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 512 512" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path style="fill:currentColor;" d="M388.225,0H123.774C76.607,0,38.233,38.374,38.233,85.541v215.933
+			c0,47.167,38.374,85.541,85.541,85.541h44.257l-8.725,103.57c-1.454,17.244,18.35,27.699,31.795,17.234l155.205-120.804h41.92
+			c47.167,0,85.541-38.373,85.541-85.541V85.541C473.765,38.374,435.392,0,388.225,0z M304.308,157.387l-2.856,31.332
+			c-0.247,2.711-2.52,4.786-5.242,4.786h-20.996c-2.907,0-5.264,2.357-5.264,5.264v94.12c0,2.907-2.357,5.264-5.264,5.264h-31.332
+			c-2.907,0-5.264-2.357-5.264-5.264v-94.12c0-2.907-2.357-5.264-5.264-5.264h-10.395c-2.907,0-5.264-2.357-5.264-5.264v-31.332
+			c0-2.907,2.357-5.264,5.264-5.264h10.225c2.907,0,5.264-2.357,5.264-5.264v-13.65c0-17.128,8.155-43.869,44.043-43.869
+			l27.091,0.109c2.899,0.012,5.243,2.365,5.243,5.264v25.358c0,2.907-2.357,5.264-5.264,5.264h-18.212
+			c-3.82,0-9.259,1.891-9.259,10.053v11.47c0,2.907,2.357,5.264,5.264,5.264h22.238C302.16,151.645,304.588,154.303,304.308,157.387
+			z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <small>Facebook</small>
+                        </a>
+                        <a href="#" class="icon youtube">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="1.4em" height="1.4em" viewBox="0 -3 20 20" version="1.1">
+
+                                <title>youtube [#168]</title>
+                                <desc>Created with Sketch.</desc>
+                                <defs>
+
+                                </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)"
+                                        fill="currentColor">
+                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                                            <path
+                                                d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289"
+                                                id="youtube-[#168]">
+
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <small>Youtube</small>
+                        </a>
+                        <a href="#" class="icon instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 24 24"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                    fill="currentColor" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                                    fill="currentColor" />
+                            </svg>
+                            <small>Instagram</small>
+                        </a>
+                        <a href="#" class="icon tiktok">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentCOlor" width="1.4em" height="1.4em"
+                                viewBox="0 0 32 32" version="1.1">
+                                <title>tiktok</title>
+                                <path
+                                    d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z" />
+                            </svg>
+                            <small>Tiktok</small>
+                        </a>
+                        <a href="#" class="icon giphy">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="1.4em" height="1.4em"
+                                viewBox="0 0 24 24" role="img">
+                                <path
+                                    d="M2.666 0v24h18.668V8.666l-2.668 2.668v10H5.334V2.668H10L12.666 0zm10.668 0v8h8V5.334h-2.668V2.668H16V0" />
+                            </svg>
+                            <small>Giphy</small>
+                        </a>
+                        <a href="#" class="icon pinterest">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="1.4em" height="1.4em" viewBox="0 0 20 20" version="1.1">
+
+                                <title>pinterest [#180]</title>
+                                <desc>Created with Sketch.</desc>
+                                <defs>
+
+                                </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Dribbble-Light-Preview" transform="translate(-220.000000, -7399.000000)"
+                                        fill="currentColor">
+                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                                            <path
+                                                d="M173.876,7239 C168.399,7239 164,7243.43481 164,7248.95866 C164,7253.05869 166.407,7256.48916 169.893,7258.07936 C169.893,7256.21186 169.88,7256.45286 171.303,7250.38046 C170.521,7248.80236 171.129,7246.19673 172.88,7246.19673 C175.31,7246.19673 173.659,7249.79964 173.378,7251.2174 C173.129,7252.30544 173.959,7253.14238 174.955,7253.14238 C176.864,7253.14238 178.108,7250.71524 178.108,7247.87063 C178.108,7245.69456 176.615,7244.10437 174.042,7244.10437 C169.467,7244.10437 168.307,7249.19966 169.893,7250.79893 C170.292,7251.40294 169.893,7251.43118 169.893,7252.22174 C169.616,7253.05768 167.403,7251.84259 167.403,7248.70757 C167.403,7245.86195 169.727,7242.51518 174.457,7242.51518 C178.191,7242.51518 180.681,7245.27609 180.681,7248.2054 C180.681,7252.13805 178.523,7254.98366 175.37,7254.98366 C174.291,7254.98366 173.295,7254.3978 172.963,7253.72824 C172.36,7256.07371 172.238,7257.26258 171.303,7258.58153 C172.216,7258.83261 173.129,7259 174.125,7259 C179.602,7259 184,7254.56519 184,7249.04235 C183.752,7243.43481 179.353,7239 173.876,7239"
+                                                id="pinterest-[#180]">
+
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <small>Pinterest</small>
+                        </a>
+                    </div>
+                </div>
+                <a href="/" class="back-to-top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 32 32"
+                        id="Lager_31" data-name="Lager 31">
+                        <g id="Group_10" data-name="Group 10">
+                            <path id="Path_37" data-name="Path 37"
+                                d="M11.413,17.387,14,14.754V22.02A1.979,1.979,0,0,0,15.98,24h.04A1.979,1.979,0,0,0,18,22.02V15.057l.26.042,2.248,2.227a2.091,2.091,0,0,0,2.657.293A1.973,1.973,0,0,0,23.42,14.6L17.346,8.581a2.017,2.017,0,0,0-2.833,0l-5.934,6a1.97,1.97,0,0,0,0,2.806A2.016,2.016,0,0,0,11.413,17.387Z"
+                                fill="currentColor" />
+                            <path id="Path_38" data-name="Path 38"
+                                d="M16,32A16,16,0,1,0,0,16,16,16,0,0,0,16,32ZM16,4A12,12,0,1,1,4,16,12.013,12.013,0,0,1,16,4Z"
+                                fill="currentColor" />
+                        </g>
+                    </svg>
+                    <span>Back to top</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

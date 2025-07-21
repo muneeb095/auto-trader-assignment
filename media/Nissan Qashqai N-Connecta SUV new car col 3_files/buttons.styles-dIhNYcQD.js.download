@@ -1,0 +1,6 @@
+
+              import{q as n}from"./vendor-CaU5PGqL.js";const o=n.button.withConfig({componentId:"at__sc-141g4g0-0"})(["margin:0;padding:0;border:0 none;background:transparent;@media print{display:none;}"]);export{o as R};
+
+              window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || [];
+              window.__LOADABLE_LOADED_CHUNKS__.push(['buttons.styles', { importPath: '/fpa/bundles/buttons.styles-dIhNYcQD.js' }]);
+            

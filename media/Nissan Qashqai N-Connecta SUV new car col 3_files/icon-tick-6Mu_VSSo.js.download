@@ -1,0 +1,6 @@
+
+              import{R as e,_ as r,r as a}from"./vendor-CaU5PGqL.js";import{I as n}from"./index-B8StP1lb.js";var m=function(t){return e.createElement(n,r({viewBox:"-2 -5 24 24"},t),e.createElement(a.Fragment,null,e.createElement("path",{d:"M6 13.439L0 7.43902L1.42 6.01902L6.69 11.299L17.98 -0.000976562L19.4 1.41902L7.4 13.419C7.2157 13.6049 6.96584 13.7112 6.70408 13.7149C6.44232 13.7187 6.18953 13.6196 6 13.439Z"})))};export{m as I};
+
+              window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || [];
+              window.__LOADABLE_LOADED_CHUNKS__.push(['icon-tick', { importPath: '/fpa/bundles/icon-tick-6Mu_VSSo.js' }]);
+            
